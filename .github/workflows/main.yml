@@ -1,0 +1,15 @@
+name: Test Workflow Minimal
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Test Simple
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Afficher la date et l'heure
+        run: date
